@@ -1,0 +1,16 @@
+
+.img-tag{
+    border-radius: 10px;
+    float: left;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    margin: 10px;
+}
+
+.img-tag  img{
+ padding: 10px 0px 0px 10px;
+ width: 35px;
+ height: 35px;
+ filter: invert(100%);
+}

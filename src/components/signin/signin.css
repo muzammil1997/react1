@@ -1,0 +1,34 @@
+
+
+.right {
+   padding-top: 100px;
+}
+.remove-border input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-radius: 0 !important;
+    background: transparent;
+}
+
+.remove-border > 
+input:focus,
+input:hover,
+input:active{
+    outline:0px !important;
+    box-shadow: none !important;
+    border-color: green;
+    background: transparent;
+  }
+
+  .form-group button {
+      border-radius: 35px;
+  }
+
+  @media screen and (max-width: 750px) { 
+
+    .left img {
+        display: none;
+        }
+        
+    }
+
