@@ -147,7 +147,7 @@ class SignupForm extends React.Component{
                    <div className="form-group">
                        <button className="btn btn-dark">Sign up</button>
                     </div>
-                    <span>Already have an Account? <Link to="/login">Sign in</Link></span>
+                    <span>Already have an Account? <Link to="/signin">Sign in</Link></span>
                </form>
                }
            </div>
