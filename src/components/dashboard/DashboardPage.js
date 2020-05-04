@@ -1,17 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';                                                                                                
 import { logout } from '../../redux/actions';
 import FlashMessageList from '../flash/FlashMessageList';
+import AuthNavbar from '../layout/AuthNavbar';
 
 
 class DashboardPage extends React.Component{
-    
-    onClick = () => {
-        this.props.logout();
-    }
-
+                           
     render(){
         const { isAuthenticated, user } = this.props.auth;
         
@@ -21,14 +17,10 @@ class DashboardPage extends React.Component{
             </div>
         );
         const gustLinks = (
-            <div>
-            <Link to="/login">Sign in</Link>
-            <Link to="/signup">Sign up</Link>
-            </div>
+           <AuthNavbar/>
         );
         return(
             <div>
-                <button onClick={this.onClick} >Logout</button>
                 {isAuthenticated ? userLinks : gustLinks}
                 <FlashMessageList />
             </div>
