@@ -22,7 +22,7 @@ class App extends React.Component {
                         <Route exact path="/signin" component={SigninPage} />
                         <Route exact path="/signup" component={SignupPage} />
                         <Route exact path="/" component={DashboardPage} />
-                        <Route exact path="/event" component={requireAuth(EventPage)} />
+                        <Route exact path="/event" component={EventPage} />
                       </Switch>
                     </Suspense>
                 </Router>
